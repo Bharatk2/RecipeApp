@@ -14,6 +14,7 @@
 		8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */; };
 		8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3FE2C34C7C800C86F32 /* Meal.swift */; };
 		8422F4042C34C9C300C86F32 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4032C34C9C300C86F32 /* Errors.swift */; };
+		8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4052C34CA2300C86F32 /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dessert.xcdatamodel; sourceTree = "<group>"; };
 		8422F3FE2C34C7C800C86F32 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8422F4032C34C9C300C86F32 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		8422F4052C34CA2300C86F32 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		8422F3FA2C34C72D00C86F32 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				8422F4052C34CA2300C86F32 /* ApiManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F3EB2C34C5BF00C86F32 /* ContentView.swift in Sources */,
+				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
 				8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
