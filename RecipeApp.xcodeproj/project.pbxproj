@@ -52,6 +52,9 @@
 		8422F3E72C34C5BF00C86F32 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8422F3FA2C34C72D00C86F32 /* Networking */,
+				8422F3F92C34C72000C86F32 /* Model */,
+				8422F3F82C34C71800C86F32 /* ViewModel */,
 				8422F3E82C34C5BF00C86F32 /* RecipeAppApp.swift */,
 				8422F3EA2C34C5BF00C86F32 /* ContentView.swift */,
 				8422F3EC2C34C5C200C86F32 /* Assets.xcassets */,
@@ -67,6 +70,27 @@
 				8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8422F3F82C34C71800C86F32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8422F3F92C34C72000C86F32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8422F3FA2C34C72D00C86F32 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
