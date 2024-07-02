@@ -11,6 +11,7 @@
 		8422F3EB2C34C5BF00C86F32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3EA2C34C5BF00C86F32 /* ContentView.swift */; };
 		8422F3ED2C34C5C200C86F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422F3EC2C34C5C200C86F32 /* Assets.xcassets */; };
 		8422F3F12C34C5C200C86F32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */; };
+		8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		8422F3EC2C34C5C200C86F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8422F3EE2C34C5C200C86F32 /* RecipeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RecipeApp.entitlements; sourceTree = "<group>"; };
 		8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dessert.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		8422F3F92C34C72000C86F32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F3EB2C34C5BF00C86F32 /* ContentView.swift in Sources */,
 				8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */,
 			);
@@ -383,6 +387,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */,
+			);
+			currentVersion = 8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */;
+			name = Dessert.xcdatamodeld;
+			path = "/Users/admin/Documents/RecipeApp-iOS/RecipeApp/Dessert.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8422F3DD2C34C5BF00C86F32 /* Project object */;
 }
