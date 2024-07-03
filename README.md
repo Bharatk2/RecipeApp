@@ -13,4 +13,12 @@
 - [x] Users can search the list of desserts through Search Bar.
 - [x] Implemented CoreData to fetch favorite dessert entity & to persist favorite desserts.
 - [x] Implemented Networking calls with (async/await).
-- [x] Implemented 2 Unit Test methods & 1 UI Test method. 
+- [x] Implemented 2 Unit Test methods & 1 UI Test method.
+
+## Installation
+
+- Clone or download zip of the repository and go to your terminal.
+
+## Contact me
+
+Bharat Kumar (LinkedIn) – [Bharatk1](https://www.linkedin.com/in/bharatk1/) – BharKumar8@gmail.com
