@@ -97,7 +97,6 @@ struct MealDescriptionView: View {
     }
 }
 
-
 struct MealDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         let dessertPreviewCheck = DessertCoreDataViewModel()
