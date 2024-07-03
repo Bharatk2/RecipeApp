@@ -17,6 +17,13 @@
 		8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4072C34CB0800C86F32 /* DessertViewModel.swift */; };
 		8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */; };
 		8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F40D2C34CD0D00C86F32 /* MainView.swift */; };
+		8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4112C34CE8A00C86F32 /* WelcomeView.swift */; };
+		8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */; };
+		8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4162C34D0B200C86F32 /* HomeView.swift */; };
+		8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4182C34D0D100C86F32 /* MealScrollView.swift */; };
+		8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */; };
+		8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */; };
+		8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41E2C34D50400C86F32 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		8422F4072C34CB0800C86F32 /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
 		8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCoreDataViewModel.swift; sourceTree = "<group>"; };
 		8422F40D2C34CD0D00C86F32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8422F4112C34CE8A00C86F32 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		8422F4162C34D0B200C86F32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8422F4182C34D0D100C86F32 /* MealScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScrollView.swift; sourceTree = "<group>"; };
+		8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionView.swift; sourceTree = "<group>"; };
+		8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionDetail.swift; sourceTree = "<group>"; };
+		8422F41E2C34D50400C86F32 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8422F4032C34C9C300C86F32 /* Errors.swift */,
+				8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */,
 			);
 			path = "Utilities+Extensions";
 			sourceTree = "<group>";
@@ -122,6 +137,9 @@
 		8422F40B2C34CCEA00C86F32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8422F4152C34D09F00C86F32 /* Home */,
+				8422F4102C34CE2F00C86F32 /* TabBar */,
+				8422F40F2C34CE2500C86F32 /* Onboarding */,
 				8422F40C2C34CCFF00C86F32 /* Main */,
 			);
 			path = Views;
@@ -133,6 +151,33 @@
 				8422F40D2C34CD0D00C86F32 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		8422F40F2C34CE2500C86F32 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4112C34CE8A00C86F32 /* WelcomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8422F4102C34CE2F00C86F32 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8422F41E2C34D50400C86F32 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8422F4152C34D09F00C86F32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4162C34D0B200C86F32 /* HomeView.swift */,
+				8422F4182C34D0D100C86F32 /* MealScrollView.swift */,
+				8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */,
+				8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +254,16 @@
 				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
 				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
+				8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */,
+				8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */,
+				8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */,
+				8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
+				8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */,
 				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
+				8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */,
+				8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */,
 				8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
