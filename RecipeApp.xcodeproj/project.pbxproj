@@ -19,6 +19,8 @@
 		8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F40D2C34CD0D00C86F32 /* MainView.swift */; };
 		8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4112C34CE8A00C86F32 /* WelcomeView.swift */; };
 		8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */; };
+		8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4162C34D0B200C86F32 /* HomeView.swift */; };
+		8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4182C34D0D100C86F32 /* MealScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		8422F40D2C34CD0D00C86F32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8422F4112C34CE8A00C86F32 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		8422F4162C34D0B200C86F32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8422F4182C34D0D100C86F32 /* MealScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		8422F40B2C34CCEA00C86F32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8422F4152C34D09F00C86F32 /* Home */,
 				8422F4102C34CE2F00C86F32 /* TabBar */,
 				8422F40F2C34CE2500C86F32 /* Onboarding */,
 				8422F40C2C34CCFF00C86F32 /* Main */,
@@ -155,6 +160,15 @@
 			children = (
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8422F4152C34D09F00C86F32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4162C34D0B200C86F32 /* HomeView.swift */,
+				8422F4182C34D0D100C86F32 /* MealScrollView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +245,9 @@
 				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
 				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
+				8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */,
 				8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */,
+				8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */,
 				8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
