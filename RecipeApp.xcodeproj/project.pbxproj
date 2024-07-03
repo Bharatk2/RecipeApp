@@ -26,6 +26,7 @@
 		8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41E2C34D50400C86F32 /* TabBarView.swift */; };
 		8422F4222C34D77E00C86F32 /* FavoriteMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */; };
 		8422F4252C34DD3F00C86F32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4242C34DD3F00C86F32 /* ProfileView.swift */; };
+		8422F4272C34DDBA00C86F32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4262C34DDBA00C86F32 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8422F41E2C34D50400C86F32 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMealView.swift; sourceTree = "<group>"; };
 		8422F4242C34DD3F00C86F32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8422F4262C34DDBA00C86F32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8422F4242C34DD3F00C86F32 /* ProfileView.swift */,
+				8422F4262C34DDBA00C86F32 /* SettingsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */,
 				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
+				8422F4272C34DDBA00C86F32 /* SettingsView.swift in Sources */,
 				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
 				8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */,
 				8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */,

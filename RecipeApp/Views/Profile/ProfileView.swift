@@ -33,6 +33,9 @@ struct ProfileView: View {
                             Text("Edit")
                         }
                     }
+                    .popover(isPresented: $updateUserIsPresented) {
+                        SettingsView(dismissSheet: $updateUserIsPresented)
+                    }
                 }
                 HStack {
                     Text("Name:")
