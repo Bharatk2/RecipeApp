@@ -30,6 +30,7 @@
 		8422F42F2C34E24F00C86F32 /* RecipeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F42E2C34E24F00C86F32 /* RecipeAppTests.swift */; };
 		8422F43C2C34E26F00C86F32 /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F43B2C34E26F00C86F32 /* RecipeAppUITests.swift */; };
 		8422F43E2C34E26F00C86F32 /* RecipeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F43D2C34E26F00C86F32 /* RecipeAppUITestsLaunchTests.swift */; };
+		8422F4452C34E2AA00C86F32 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4442C34E2AA00C86F32 /* TestUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8422F4392C34E26F00C86F32 /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8422F43B2C34E26F00C86F32 /* RecipeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITests.swift; sourceTree = "<group>"; };
 		8422F43D2C34E26F00C86F32 /* RecipeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8422F4442C34E2AA00C86F32 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				8422F42E2C34E24F00C86F32 /* RecipeAppTests.swift */,
+				8422F4442C34E2AA00C86F32 /* TestUtilities.swift */,
 			);
 			path = RecipeAppTests;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8422F4452C34E2AA00C86F32 /* TestUtilities.swift in Sources */,
 				8422F42F2C34E24F00C86F32 /* RecipeAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
