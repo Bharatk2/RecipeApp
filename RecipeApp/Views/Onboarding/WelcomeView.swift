@@ -34,6 +34,7 @@ struct WelcomeView: View {
                     isOnBoardingViewActive = false
                     nextScreen = false
                 }
+                .modifier(ButtonModifier())
                 .accessibilityIdentifier("LetsEatButton")
             }
         }
