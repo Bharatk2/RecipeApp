@@ -21,7 +21,28 @@ struct SettingsView: View {
     @State private var newlocation = ""
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Update user information:").font(.title2)
+                TextField("Username", text: $newUserName).textFieldStyle(.roundedBorder)
+                TextField("Twitter", text: $newTwitterHandle).textFieldStyle(.roundedBorder)
+                TextField("E-Mail", text: $newEmail).textFieldStyle(.roundedBorder).textInputAutocapitalization(.never)
+                TextField("Loaction", text: $newlocation ).textFieldStyle(.roundedBorder).textInputAutocapitalization(.never)
+
+                Button("Save") {
+                    if !newUserName.isEmpty || !newTwitterHandle.isEmpty || !location.isEmpty || !newEmail.isEmpty {
+                        userName = newUserName
+                        twitterHandle = newTwitterHandle
+                        emailAddress = newEmail
+                        location = newlocation
+                        dismissSheet = false
+                    }
+                }.buttonStyle(.bordered)
+                Spacer()
+            }
+            .padding()
+            .navigationTitle(Text("Profile"))
+        }
     }
 }
 
