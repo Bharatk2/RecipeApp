@@ -16,6 +16,7 @@
 		8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4052C34CA2300C86F32 /* ApiManager.swift */; };
 		8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4072C34CB0800C86F32 /* DessertViewModel.swift */; };
 		8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */; };
+		8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F40D2C34CD0D00C86F32 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8422F4052C34CA2300C86F32 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		8422F4072C34CB0800C86F32 /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
 		8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCoreDataViewModel.swift; sourceTree = "<group>"; };
+		8422F40D2C34CD0D00C86F32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		8422F3E72C34C5BF00C86F32 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8422F40B2C34CCEA00C86F32 /* Views */,
 				8422F4022C34C97500C86F32 /* Utilities+Extensions */,
 				8422F3FA2C34C72D00C86F32 /* Networking */,
 				8422F3F92C34C72000C86F32 /* Model */,
@@ -114,6 +117,22 @@
 				8422F4032C34C9C300C86F32 /* Errors.swift */,
 			);
 			path = "Utilities+Extensions";
+			sourceTree = "<group>";
+		};
+		8422F40B2C34CCEA00C86F32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8422F40C2C34CCFF00C86F32 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8422F40C2C34CCFF00C86F32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8422F40D2C34CD0D00C86F32 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */,
+				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
 				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
