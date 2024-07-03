@@ -24,6 +24,9 @@
 		8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */; };
 		8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */; };
 		8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41E2C34D50400C86F32 /* TabBarView.swift */; };
+		8422F4222C34D77E00C86F32 /* FavoriteMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */; };
+		8422F4252C34DD3F00C86F32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4242C34DD3F00C86F32 /* ProfileView.swift */; };
+		8422F4272C34DDBA00C86F32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4262C34DDBA00C86F32 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionView.swift; sourceTree = "<group>"; };
 		8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionDetail.swift; sourceTree = "<group>"; };
 		8422F41E2C34D50400C86F32 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMealView.swift; sourceTree = "<group>"; };
+		8422F4242C34DD3F00C86F32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8422F4262C34DDBA00C86F32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,8 @@
 		8422F40B2C34CCEA00C86F32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8422F4232C34DD1100C86F32 /* Profile */,
+				8422F4202C34D73500C86F32 /* FavoriteMeal */,
 				8422F4152C34D09F00C86F32 /* Home */,
 				8422F4102C34CE2F00C86F32 /* TabBar */,
 				8422F40F2C34CE2500C86F32 /* Onboarding */,
@@ -178,6 +186,23 @@
 				8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8422F4202C34D73500C86F32 /* FavoriteMeal */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */,
+			);
+			path = FavoriteMeal;
+			sourceTree = "<group>";
+		};
+		8422F4232C34DD1100C86F32 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4242C34DD3F00C86F32 /* ProfileView.swift */,
+				8422F4262C34DDBA00C86F32 /* SettingsView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,14 +278,17 @@
 				8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */,
 				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
 				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
+				8422F4272C34DDBA00C86F32 /* SettingsView.swift in Sources */,
 				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
 				8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */,
 				8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */,
 				8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */,
 				8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
+				8422F4252C34DD3F00C86F32 /* ProfileView.swift in Sources */,
 				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
 				8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */,
+				8422F4222C34D77E00C86F32 /* FavoriteMealView.swift in Sources */,
 				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
 				8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */,
 				8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */,

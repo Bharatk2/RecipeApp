@@ -21,6 +21,19 @@ struct TabBarView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
+
+            FavoriteMealView()
+                .environmentObject(dessertcore)
+                .tabItem {
+                    Image(systemName: "books.vertical.fill")
+                    Text("Favorites")
+                }
+
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
         .onAppear(perform: {
             isOnBoardingViewActive = true

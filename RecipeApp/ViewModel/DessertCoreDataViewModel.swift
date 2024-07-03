@@ -11,7 +11,7 @@ import SwiftUI
 class DessertCoreDataViewModel: ObservableObject {
     let container: NSPersistentContainer
     @Published var savedEntity: [DessertEntity] = []
-    
+
     init() {
         container = NSPersistentContainer(name: "Dessert")
         container.loadPersistentStores { description, error in
@@ -36,10 +36,29 @@ class DessertCoreDataViewModel: ObservableObject {
     }
 
     //add the dessert
-    func addDessert(name: String) {
-        let newDessert = DessertEntity(context: container.viewContext)
-        newDessert.name = name
-        saveDessert()
+    func addDessert(name: String, isFavorited: Bool) {
+        // Check for duplicates
+        let request = NSFetchRequest<DessertEntity>(entityName: "DessertEntity")
+        request.predicate = NSPredicate(format: "name == %@", name)
+        
+        do {
+            let existingDesserts = try container.viewContext.fetch(request)
+            if existingDesserts.isEmpty {
+                let newDessert = DessertEntity(context: container.viewContext)
+                newDessert.name = name
+                newDessert.isFavorited = isFavorited
+                saveDessert()
+            } else {
+                //If the dessert with the name already exists, it fetches the first matching dessert entity from the existingDesserts array.
+                // Update the existing dessert's isFavorited status
+                if let existingDessert = existingDesserts.first {
+                    existingDessert.isFavorited = isFavorited
+                    saveDessert()
+                }
+            }
+        } catch let error {
+            print("Failed to fetch dessert: \(error.localizedDescription)")
+        }
     }
 
     //delete the dessert

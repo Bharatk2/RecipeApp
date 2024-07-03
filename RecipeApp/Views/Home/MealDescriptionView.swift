@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct MealDescriptionView: View {
     @EnvironmentObject var dessertCoreData: DessertCoreDataViewModel
@@ -44,12 +45,9 @@ struct MealDescriptionView: View {
                             Button {
                                 isFavorite.toggle()
                                 dataSavedPresented = isFavorite
-                                if isFavorite {
-                                    dessertCoreData.addDessert(name: mealDetail.meal)
-                                    UserDefaults.standard.set(true, forKey: mealDetail.meal)
-                                } else {
-                                    UserDefaults.standard.set(false, forKey: mealDetail.meal)
-                                }
+                                dessertCoreData.addDessert(name: mealDetail.meal, isFavorited: isFavorite)
+                                
+                                
                             } label: {
                                 Image(systemName: isFavorite ? "heart.fill" : "heart")
                                     .foregroundColor(.red)
@@ -75,8 +73,27 @@ struct MealDescriptionView: View {
             .frame(maxWidth:.infinity,maxHeight:.infinity)
             .padding()
         }
+        .onAppear {
+            checkIfFavorite()
+        }
         .alert("Recipe Saved", isPresented: $dataSavedPresented, actions: {
         })
+    }
+    
+    // Check if the dessert is favorited onAppear of MealDescriptionView.
+    private func checkIfFavorite() {
+        guard let mealName = mealDetail?.meal else { return }
+        let request = NSFetchRequest<DessertEntity>(entityName: "DessertEntity")
+        request.predicate = NSPredicate(format: "name == %@", mealName)
+        
+        do {
+            let existingDesserts = try dessertCoreData.container.viewContext.fetch(request)
+            if let existingDessert = existingDesserts.first {
+                isFavorite = existingDessert.isFavorited
+            }
+        } catch {
+            print("Failed to fetch dessert: \(error.localizedDescription)")
+        }
     }
 }
 
