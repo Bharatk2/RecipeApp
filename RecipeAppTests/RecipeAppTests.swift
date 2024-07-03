@@ -47,4 +47,34 @@ final class RecipeAppTests: XCTestCase {
         XCTAssertEqual(meals.first?.meal, "Apam balik")
         XCTAssertEqual(meals.first?.mealThumb, "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg")
     }
+    
+    func testGetDessertDetail() async throws {
+        let mockMealDetails = [
+            MealDetail(
+                meal: "Apam balik",
+                instructions: "Mix milk, oil and egg together. Sift flour, baking powder and salt into the mixture. Stir well until all ingredients are combined evenly.",
+                mealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
+                ingredients: ["strIngredient1": "Milk"]
+            )
+        ]
+        
+        let mockMealData = MealDetailData(meals: mockMealDetails)
+        let mockData = try JSONEncoder().encode(mockMealData)
+        
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (response, mockData)
+        }
+        
+        let mockSession = URLSession(configuration: URLSessionConfiguration.ephemeral)
+        let apiCaller = APICaller(session: mockSession)
+        let mealDetails = try await apiCaller.getDessertDetail(id: "53049")
+        
+        XCTAssertEqual(mealDetails.count, 1)
+        let mealDetail = mealDetails.first
+        XCTAssertEqual(mealDetail?.meal, "Apam balik")
+        XCTAssertEqual(mealDetail?.instructions, "Mix milk, oil and egg together. Sift flour, baking powder and salt into the mixture. Stir well until all ingredients are combined evenly.\r\n\r\nSpread some batter onto the pan. Spread a thin layer of batter to the side of the pan. Cover the pan for 30-60 seconds until small air bubbles appear.\r\n\r\nAdd butter, cream corn, crushed peanuts and sugar onto the pancake. Fold the pancake into half once the bottom surface is browned.\r\n\r\nCut into wedges and best eaten when it is warm.")
+        XCTAssertEqual(mealDetail?.mealThumb, "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg")
+        XCTAssertEqual(mealDetail?.ingredients["Milk"], "200ml")
+    }
 }
