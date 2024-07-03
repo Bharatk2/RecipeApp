@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3E82C34C5BF00C86F32 /* RecipeAppApp.swift */; };
-		8422F3EB2C34C5BF00C86F32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3EA2C34C5BF00C86F32 /* ContentView.swift */; };
 		8422F3ED2C34C5C200C86F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422F3EC2C34C5C200C86F32 /* Assets.xcassets */; };
 		8422F3F12C34C5C200C86F32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */; };
+		8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */; };
+		8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F3FE2C34C7C800C86F32 /* Meal.swift */; };
+		8422F4042C34C9C300C86F32 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4032C34C9C300C86F32 /* Errors.swift */; };
+		8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4052C34CA2300C86F32 /* ApiManager.swift */; };
+		8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4072C34CB0800C86F32 /* DessertViewModel.swift */; };
+		8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */; };
+		8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F40D2C34CD0D00C86F32 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8422F3E52C34C5BF00C86F32 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8422F3E82C34C5BF00C86F32 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
-		8422F3EA2C34C5BF00C86F32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8422F3EC2C34C5C200C86F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8422F3EE2C34C5C200C86F32 /* RecipeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RecipeApp.entitlements; sourceTree = "<group>"; };
 		8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dessert.xcdatamodel; sourceTree = "<group>"; };
+		8422F3FE2C34C7C800C86F32 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		8422F4032C34C9C300C86F32 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		8422F4052C34CA2300C86F32 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		8422F4072C34CB0800C86F32 /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
+		8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCoreDataViewModel.swift; sourceTree = "<group>"; };
+		8422F40D2C34CD0D00C86F32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,12 @@
 		8422F3E72C34C5BF00C86F32 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8422F40B2C34CCEA00C86F32 /* Views */,
+				8422F4022C34C97500C86F32 /* Utilities+Extensions */,
+				8422F3FA2C34C72D00C86F32 /* Networking */,
+				8422F3F92C34C72000C86F32 /* Model */,
+				8422F3F82C34C71800C86F32 /* ViewModel */,
 				8422F3E82C34C5BF00C86F32 /* RecipeAppApp.swift */,
-				8422F3EA2C34C5BF00C86F32 /* ContentView.swift */,
 				8422F3EC2C34C5C200C86F32 /* Assets.xcassets */,
 				8422F3EE2C34C5C200C86F32 /* RecipeApp.entitlements */,
 				8422F3EF2C34C5C200C86F32 /* Preview Content */,
@@ -67,6 +83,56 @@
 				8422F3F02C34C5C200C86F32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8422F3F82C34C71800C86F32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4072C34CB0800C86F32 /* DessertViewModel.swift */,
+				8422F4092C34CBF800C86F32 /* DessertCoreDataViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8422F3F92C34C72000C86F32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */,
+				8422F3FE2C34C7C800C86F32 /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8422F3FA2C34C72D00C86F32 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4052C34CA2300C86F32 /* ApiManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8422F4022C34C97500C86F32 /* Utilities+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4032C34C9C300C86F32 /* Errors.swift */,
+			);
+			path = "Utilities+Extensions";
+			sourceTree = "<group>";
+		};
+		8422F40B2C34CCEA00C86F32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8422F40C2C34CCFF00C86F32 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8422F40C2C34CCFF00C86F32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8422F40D2C34CD0D00C86F32 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8422F3EB2C34C5BF00C86F32 /* ContentView.swift in Sources */,
+				8422F3FF2C34C7C800C86F32 /* Meal.swift in Sources */,
+				8422F40E2C34CD0E00C86F32 /* MainView.swift in Sources */,
+				8422F4042C34C9C300C86F32 /* Errors.swift in Sources */,
+				8422F40A2C34CBF800C86F32 /* DessertCoreDataViewModel.swift in Sources */,
+				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
+				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
+				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
 				8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +431,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8422F3FB2C34C78A00C86F32 /* Dessert.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */,
+			);
+			currentVersion = 8422F3FC2C34C78A00C86F32 /* Dessert.xcdatamodel */;
+			name = Dessert.xcdatamodeld;
+			path = "/Users/admin/Documents/RecipeApp-iOS/RecipeApp/Dessert.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8422F3DD2C34C5BF00C86F32 /* Project object */;
 }
