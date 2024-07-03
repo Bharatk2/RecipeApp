@@ -28,6 +28,12 @@ struct TabBarView: View {
                     Image(systemName: "books.vertical.fill")
                     Text("Favorites")
                 }
+
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
         .onAppear(perform: {
             isOnBoardingViewActive = true
