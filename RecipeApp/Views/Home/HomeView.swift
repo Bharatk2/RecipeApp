@@ -27,7 +27,10 @@ struct HomeView: View {
                 ScrollView {
                     LazyVGrid(columns: columns) {
                         ForEach(filteredMeals, id: \.self) { meal in
-                            MealScrollView(mealModel: meal)
+                            NavigationLink(destination: MealDescriptionDetail(mealDetail: meal.mealID)) {
+                                MealScrollView(mealModel: meal)
+                            }
+
                         }
                     }
                 }
