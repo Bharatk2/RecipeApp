@@ -24,6 +24,7 @@
 		8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */; };
 		8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */; };
 		8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41E2C34D50400C86F32 /* TabBarView.swift */; };
+		8422F4222C34D77E00C86F32 /* FavoriteMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionView.swift; sourceTree = "<group>"; };
 		8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionDetail.swift; sourceTree = "<group>"; };
 		8422F41E2C34D50400C86F32 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMealView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		8422F40B2C34CCEA00C86F32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8422F4202C34D73500C86F32 /* FavoriteMeal */,
 				8422F4152C34D09F00C86F32 /* Home */,
 				8422F4102C34CE2F00C86F32 /* TabBar */,
 				8422F40F2C34CE2500C86F32 /* Onboarding */,
@@ -178,6 +181,14 @@
 				8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8422F4202C34D73500C86F32 /* FavoriteMeal */ = {
+			isa = PBXGroup;
+			children = (
+				8422F4212C34D77E00C86F32 /* FavoriteMealView.swift */,
+			);
+			path = FavoriteMeal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
 				8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */,
+				8422F4222C34D77E00C86F32 /* FavoriteMealView.swift in Sources */,
 				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
 				8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */,
 				8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */,
