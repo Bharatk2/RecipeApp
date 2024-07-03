@@ -23,12 +23,19 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Update user information:").font(.title2)
-                TextField("Username", text: $newUserName).textFieldStyle(.roundedBorder)
-                TextField("Twitter", text: $newTwitterHandle).textFieldStyle(.roundedBorder)
-                TextField("E-Mail", text: $newEmail).textFieldStyle(.roundedBorder).textInputAutocapitalization(.never)
-                TextField("Loaction", text: $newlocation ).textFieldStyle(.roundedBorder).textInputAutocapitalization(.never)
-
+                Text("Update user information:")
+                    .font(.title2)
+                TextField("Username", text: $newUserName)
+                    .textFieldStyle(.roundedBorder)
+                TextField("Twitter", text: $newTwitterHandle)
+                    .textFieldStyle(.roundedBorder)
+                TextField("E-Mail", text: $newEmail)
+                    .textFieldStyle(.roundedBorder)
+                    .textInputAutocapitalization(.never)
+                TextField("Loaction", text: $newlocation)
+                    .textFieldStyle(.roundedBorder)
+                    .textInputAutocapitalization(.never)
+                
                 Button("Save") {
                     if !newUserName.isEmpty || !newTwitterHandle.isEmpty || !location.isEmpty || !newEmail.isEmpty {
                         userName = newUserName
