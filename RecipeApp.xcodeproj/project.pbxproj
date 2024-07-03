@@ -21,6 +21,9 @@
 		8422F4142C34CFBF00C86F32 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */; };
 		8422F4172C34D0B200C86F32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4162C34D0B200C86F32 /* HomeView.swift */; };
 		8422F4192C34D0D100C86F32 /* MealScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F4182C34D0D100C86F32 /* MealScrollView.swift */; };
+		8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */; };
+		8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */; };
+		8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F41E2C34D50400C86F32 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		8422F4132C34CFBF00C86F32 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		8422F4162C34D0B200C86F32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8422F4182C34D0D100C86F32 /* MealScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealScrollView.swift; sourceTree = "<group>"; };
+		8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionView.swift; sourceTree = "<group>"; };
+		8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDescriptionDetail.swift; sourceTree = "<group>"; };
+		8422F41E2C34D50400C86F32 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		8422F4102C34CE2F00C86F32 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8422F41E2C34D50400C86F32 /* TabBarView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -167,6 +174,8 @@
 			children = (
 				8422F4162C34D0B200C86F32 /* HomeView.swift */,
 				8422F4182C34D0D100C86F32 /* MealScrollView.swift */,
+				8422F41A2C34D2D400C86F32 /* MealDescriptionView.swift */,
+				8422F41C2C34D38500C86F32 /* MealDescriptionDetail.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -251,7 +260,10 @@
 				8422F4122C34CE8A00C86F32 /* WelcomeView.swift in Sources */,
 				8422F3FD2C34C78A00C86F32 /* Dessert.xcdatamodeld in Sources */,
 				8422F4082C34CB0800C86F32 /* DessertViewModel.swift in Sources */,
+				8422F41D2C34D38500C86F32 /* MealDescriptionDetail.swift in Sources */,
 				8422F4062C34CA2300C86F32 /* ApiManager.swift in Sources */,
+				8422F41B2C34D2D400C86F32 /* MealDescriptionView.swift in Sources */,
+				8422F41F2C34D50400C86F32 /* TabBarView.swift in Sources */,
 				8422F3E92C34C5BF00C86F32 /* RecipeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
