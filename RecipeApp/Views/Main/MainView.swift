@@ -10,13 +10,7 @@ import SwiftUI
 struct MainView: View {
     @State var nextScreen: Bool = true
     var body: some View {
-        ZStack {
-            if nextScreen {
-                WelcomeView(nextScreen: $nextScreen)
-            } else {
-                TabBarView()
-            }
-        }
+        TabBarView()
     }
 }
 
